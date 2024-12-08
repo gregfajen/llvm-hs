@@ -1,5 +1,5 @@
 cabal-version: 2.2
-name: llvm-hs
+name: llvm15-hs
 version: 15.0.0
 license: BSD-3-Clause
 license-file: LICENSE
@@ -110,7 +110,7 @@ library
     template-haskell >= 2.5.0.0,
     containers >= 0.4.2.1,
     array >= 0.4.0.0,
-    llvm-hs-pure == 15.0.*
+    llvm15-hs-pure == 15.0.*
   hs-source-dirs: src
 
   default-extensions:
@@ -267,8 +267,8 @@ test-suite test
     tasty-hunit >= 0.9,
     tasty-quickcheck >= 0.8,
     QuickCheck >= 2.5.1.1,
-    llvm-hs,
-    llvm-hs-pure,
+    llvm15-hs,
+    llvm15-hs-pure,
     containers >= 0.4.2.1,
     mtl >= 2.1,
     transformers >= 0.3.0.0,
